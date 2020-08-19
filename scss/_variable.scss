@@ -1,0 +1,14 @@
+// text color
+$text-primary:#3F5D45;
+$text-light:#EAF0ED;
+$button-color:#FFE180;
+
+// font size
+$font-s: 1.25rem; /* 20px */
+$font-m: 1.5rem; /* 24px */
+
+@mixin pad{
+  @media(max-width: 768px){
+    @content;
+  }
+}

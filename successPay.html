@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>successPay</title>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <button class="ham-button">
+              <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true" alt="icon">
+            </button>
+            <a href="index.html" class = "logo">logo</a>
+            <a href="index.html" class = "brand-name">brand-name</a>
+            <div class="menu">
+              <ul class=menu-ul>
+                <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">甜點</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">登入</a></li>
+              </ul>
+              <a class="cart" href="successpay.html">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true" alt="cart">
+              </a>
+            </div>
+        </nav>
+    </div>
+    <div class="success-main">
+        <div class="content">
+            <div class="progress-bar">
+                <span class="material-icons">check_circle</span>
+                <span class="border-left"></span>
+                <span class="material-icons">check_circle</span>
+                <span class="border-right"></span>
+                <span class="material-icons" style="margin-right: 0;">check_circle</span>
+            </div>
+            <img src="./img/lg-success.svg" alt="付款成功">
+        </div>
+        <a href="index.html">繼續逛逛</a>
+    </div>
+    <div class="subscribe">
+        <ul>
+            <li><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logo-light.svg" alt=""></li>
+            <li><h2>訂閱你我的甜蜜郵件</h2></li>
+        </ul>
+        <form action="successPay.html" class="input">
+            <input type="text" name="mail" class="mail">
+            <button type="button" class="submit"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true"></button>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="info">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg" alt="">
+            <div class="contact">
+                <h2>07-1234-5678<br>sweetaste@email.com<br>800 高雄市新興區幸福路 520 號</h2>
+                <div class="soial-media">
+                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-line%40.svg" alt="">
+                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-facebook.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>今天是個—<br>&nbsp;&nbsp;吃甜點的好日子。</p>
+            <h2>© 2018 Sweetaste* All Rights Reserved</h2>
+        </div>
+    </div>
+    <script>
+        $('.ham-button').click(function () {
+            $('.menu-ul').toggleClass('active')
+        })
+    </script>
+</body>
+</html>

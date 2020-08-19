@@ -1,0 +1,166 @@
+.main{
+    margin-top : 50px ;
+    display : flex ;
+    text-align : center ;
+    justify-content: space-between ;
+    @include pad(){
+        width : 100% ;
+        flex-direction: column ;
+        justify-content: center ;
+        align-items: center ;
+        margin-top : 0px ;
+    }
+}
+.type-list{
+    width : 25% ;
+    ul{
+        font-size : $font-m ;
+        font-weight : bold ;
+    }
+    li{
+        display : block ;
+        font-weight: bold ;
+        border:1px solid $text-light;
+        a{
+            display : block ;
+            padding : 20px ;
+            color: $text-primary ;
+        }
+        a:hover{
+            background :$text-light ;
+        }
+    }
+    h3{
+        background:$text-primary;
+        color : $text-light ;
+        padding : 20px ;
+        font-size : $font-m ;
+        font-weight: bold ;
+    }
+}
+@media(max-width: 768px){
+    .type-list{
+        width :100% ;
+        ul{
+            max-width :100%  ;
+            margin-bottom : 40px ;
+        }
+        li{
+            max-width :100% ;
+            a{
+                max-width :100% ;
+            }
+        }
+    }
+}
+.product-list{
+    width : 70% ;
+    ul{
+        display:flex ;
+        flex-wrap :wrap ;
+        justify-content:space-between;
+    }
+    li{
+        max-width : 50% ;
+        margin-bottom :20px ;
+        border:1px solid $text-light;
+        a{
+            background: $text-light;
+            color :$text-primary;
+            display : block ;
+            font-weight: bold ;
+            padding : 10px ;
+            font-size : $font-m ;
+            line-height:33px ;
+        }
+        a:hover{
+            background: $text-primary;
+            color : $text-light ;
+        }
+    }
+    .img{
+        position: relative;
+        .favorite{
+            position: absolute;
+            right: 22px;
+            top: 19px;
+        }
+        p{
+            position: absolute;
+            left : 20px ;
+            writing-mode: vertical-lr ;
+            background-color:#3F5D45 ;
+            color: white;
+            font-weight: bold ;
+            padding: 10px;
+            letter-spacing: 5px;
+        }
+    }
+    .text{
+        display : flex ;
+        justify-content : space-between ;
+        padding :20px ;
+        h2{
+            font-size:$font-s ;
+            line-height:28px ;
+            color : $text-primary ;
+        }
+        .price{
+            font-weight: bold;
+            border-left:1px solid $text-light;
+        }
+    }
+}
+@media(max-width: 768px){
+    .product-list{
+        width : 100% ;
+        ul{
+            flex-wrap: wrap ;
+            flex-direction: column ;
+            justify-content: center ;
+            align-items: center ;
+        }
+        li{
+            max-width : 100% ;
+        }
+    }
+}
+.page{
+    margin-bottom : 20px ;
+    ul{
+        display:flex ;
+        justify-content : flex-end ; 
+    }
+    li{
+        border:1px solid $text-light;
+        img{
+            padding : 18px;
+        }
+        img:hover{
+            background : $text-primary;
+            color : $text-light ;
+        }
+        a{
+            display :block ;
+            font-size:$font-m ;
+            padding : 18px 24px ;
+            color : $text-primary;
+        }
+        a:hover{
+            background : $text-primary;
+            color : $text-light ;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .page{
+        display : flex ;
+        justify-content: center ;
+        align-items: center ;
+        margin-bottom :40px ;
+        ul{
+            margin : 0 auto ;
+        }
+    }
+}

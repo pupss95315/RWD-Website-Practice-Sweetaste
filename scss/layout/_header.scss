@@ -1,0 +1,91 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 34px 0;
+    position: relative;
+} 
+.ham-button {
+    display: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    @include pad(){
+        display: block;
+        &:focus{
+            outline: 0;
+        }
+    }
+}
+.logo{
+    display : none ;
+    @include pad(){
+        display : block ;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-sm-dark.svg) ;
+        background-repeat: no-repeat;
+        width : 114px ;
+        height: 24px;
+        text-indent:101% ;
+        overflow:hidden ;
+        white-space:nowrap ;
+    }
+}
+.brand-name{
+    margin-left :20px ;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg) ;
+    background-repeat: no-repeat;
+    width : 300px ;
+    height :40px ;
+    text-indent:101% ;
+    overflow:hidden ;
+    white-space:nowrap ;
+    @include pad(){
+        display :none ;
+    }
+}
+.menu-ul{
+    display: flex;
+    align-items: center;
+    max-height: 0px;
+    @include pad(){
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        transition: all 0.8s;
+        overflow: hidden;
+        background: white;
+        flex-direction: column;
+    }
+}
+.navbar .active{
+    max-height: 200px;
+    z-index: 1;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.nav-link{
+    color: #3F5D45;
+    font-weight: bold;
+    padding: 0 30px;
+    display: block;
+    @include pad(){
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+.cart{
+    padding-left: 30px;
+    @include pad(){
+        padding-left: 0;
+    }
+}
+@media(max-width: 768px){
+    .nav-item {
+      width: 100%;
+    }
+    .nav-item:hover {
+      background-color: #EAF0ED;
+    }
+}

@@ -1,0 +1,128 @@
+.subscribe{
+    background:$text-primary;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    padding :30px 100px ;
+    width : 100% ;
+    ul{
+        display:flex ;
+        align-items: center;
+    }
+    li{
+        img{
+            width : 40px ;
+            height : 40px ;
+            margin-right : 20px ;
+        }
+        h2{
+            color : $text-light;
+            font-size :$font-m ;
+        }
+    }
+    .input{
+        display: flex;
+        .mail{
+            background: $text-light url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) no-repeat 20px;
+            width: 266px;
+            height: 56px;
+            font-size: $font-s;
+            padding: 0px 0px 0px 50px;
+            border: none;
+        }
+        .submit{
+            cursor: pointer;
+            background-color: #FFE180;
+            padding: 16px;
+            outline: none;
+            border: none;
+        }
+    }
+}
+@media(max-width: 768px){
+    .subscribe{
+        display : flex ;
+        flex-direction: column ;
+        justify-content: center;
+        align-content: center; 
+        ul{
+            width : 80% ;
+            height: 50% ;
+            margin-bottom :40px ;
+            justify-content: center;
+            align-content: center; 
+        }
+        .input{
+            width : 80% ;
+            justify-content: center;
+            align-content: center; 
+        }
+    }
+}
+.footer{
+    display : flex ;
+    justify-content : space-around ;
+    padding : 60px ;
+    background:$text-light;
+    .info{
+        display : flex ;
+        flex-direction: column ;
+        justify-content : space-between ;
+        max-width : 40% ;
+        img{
+            max-width : 70% ; 
+            padding-right :10px ;
+        }
+        h2{
+            color : $text-primary;
+            font-size : 16px ;
+            line-height: 24px ;
+            margin-bottom : 20px ;
+        }
+        .soial-media{
+            display : flex ;
+            max-width : 20% ;
+            margin-right : 20px ;
+        }
+        .img img{
+            margin-right :10px ;
+        }
+    }
+    .copy-right{
+        p{
+            writing-mode: vertical-rl;
+            font-size:$font-m;
+            line-height:36px;
+            font-weight : 900 ;
+            font-family :"PMingLiU";
+            letter-spacing: 5px ;
+            color :$text-primary;
+            margin-left:230px ;
+            margin-bottom : 40px ;
+        }
+        h2{
+            color : $text-primary ;
+            font-size : 16px ;
+            line-height :19px ;
+        }
+
+    }
+}
+@media(max-width: 768px){
+    .footer{
+        display :flex ;
+        flex-direction: column;
+        .copy-right p{
+            display :none ;
+        }
+        .info img{
+            margin-bottom :40px ;
+            max-width : 100% ;
+        }
+        .contact{
+            .social-media img{
+                max-width : 100% ;
+            }
+        }
+    }
+}
