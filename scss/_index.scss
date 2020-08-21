@@ -104,10 +104,11 @@
             font-size:$font-s ;
             line-height:28px ;
             color : $text-primary ;
-        }
-        .price{
-            font-weight: bold;
-            border-left:1px solid $text-light;
+            span{
+                margin-left : 75px ;
+                font-weight: bold;
+                border-left:1px solid $text-light;
+            }
         }
     }
 }

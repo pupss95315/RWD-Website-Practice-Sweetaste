@@ -89,6 +89,8 @@
         }
     }
     .copy-right{
+        display : flex ;
+        flex-direction: column; 
         p{
             writing-mode: vertical-rl;
             font-size:$font-m;
@@ -97,8 +99,6 @@
             font-family :"PMingLiU";
             letter-spacing: 5px ;
             color :$text-primary;
-            margin-left:230px ;
-            margin-bottom : 40px ;
         }
         h2{
             color : $text-primary ;
