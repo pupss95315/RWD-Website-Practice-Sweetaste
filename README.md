@@ -6,5 +6,5 @@
 
 總共有兩個頁面，分別是：首頁 ( index.html ) 、付款成功頁面 ( successPay.html )。 
 
-以下網址為此專題的 Github page 連結 : https://pupss95315.github.io/SCSS-Practice/index.html
+以下網址為此專題的 Github page 連結 : https://pupss95315.github.io/RWD-Website-Practice-Sweetaste/
  
